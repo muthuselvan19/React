@@ -1,0 +1,35 @@
+{
+  "name": "react-phase",
+  "version": "1.0.0",
+  "description": "By this programs to gain react basic to Advanced",
+  "keywords": [
+    "nemo",
+    "prime",
+    "dorry",
+    "prince"
+  ],
+  "homepage": "https://github.com/muthuselvan19/React#readme",
+  "bugs": {
+    "url": "https://github.com/muthuselvan19/React/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/muthuselvan19/React.git"
+  },
+  "license": "ISC",
+  "author": "MuthuSelvan",
+  "type": "commonjs",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "parcel": "^2.16.4"
+  },
+  "dependencies": {
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4"
+  },
+  "browserslist":[
+    "last 2 versions"
+  ]
+}

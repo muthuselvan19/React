@@ -1,5 +1,8 @@
+import React from "react";
+import ReactDOM from "react-dom/client"
+
 let headVal = React.createElement("h2",
-    { id: "headTag", className: "SomeShit" },
+    { id: "headTag", className: "h2Tag" },
     "Hellloww World From React!!!!!!!"
 );
 
@@ -15,7 +18,7 @@ const parentId = React.createElement("div", { id: "parent" },
 console.log(parentId);
 
 
-let creationRoot = ReactDOM.createRoot(document.getElementById("small"));
+let creationRoot = ReactDOM.createRoot(document.getElementById("root"));
 
 // console.log(creationRoot);
 

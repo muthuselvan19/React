@@ -1,7 +1,35 @@
-.h2Tag {
-    color: rgb(13, 12, 24);
+.head {
+    display: flex;
+    justify-content: space-between;
+    height: fit-content;
+    margin: 5px;
+    border: 1px solid black;
+    
+}
+
+.head > .resName > .tagList {
+    margin: 10px;
+} 
+.headLogo {
+    padding: 5px;
+    width: 120px;
+    height: 120px;
+}
+.resName {
+    padding: 32px;
+}
+
+.tagList>li {
+    list-style-type: none;
+    margin: 30px;
+    padding: 10px;
     display: inline-block;
-    background: burlywood;
+}
+
+.tagList {
     text-align: center;
 }
+
+
+/* body content      */
 

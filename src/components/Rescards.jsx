@@ -1,38 +1,16 @@
-import React from "react";
-import ReactDOM from "react-dom/client"
-import logo from './assets/ResLogo.png'
-console.log(logo);
-const Heading = () => {
-    return (
-        <div className="head">
-            <img className="headLogo" src={logo} alt="image not Found"></img>
-            <h2 className="resName">Bailey Restaurent</h2>
-            <ul className="tagList">
-                <li>Home</li>
-                <li>About Us</li>
-                <li>Contact Us</li>
-            </ul>
-        </div>
-    );
-}
+import Block from "./Block";
 
-const Body = () => {
+const Rescards = () => {
     return (
         <div className="bodyContent">
-            <div className="searchBar">
-                <input type="text" className="searcher" placeholder="search"></input>
-                <input type="submit" className="submitArrow"></input>
-            </div>
-             {restaurentData.map((restaurant) => (
-          <Block key={restaurant.id} resData={restaurant} />
-        ))}
+            {restaurentData.map((restaurant) => (
+                <Block key={restaurant.id} resData={restaurant} />
+            ))}
 
         </div>
     );
 }
-
-
-export const restaurentData = [
+const restaurentData = [
     {
         id: 1,
         imgSrc:
@@ -124,34 +102,4 @@ export const restaurentData = [
     },
 ];
 
-const Block = (props) => {
-    const { resData } = props;
-    if (!resData) {
-        console.log("Wrong");
-        return null;
-    }
-    return (
-        <div className="item">
-            <img src={resData.imgSrc}/>
-            <h3>{resData.headingText}</h3>
-            <p>{resData.ratingData}</p>
-            <i>{resData.deleveryTime}</i>
-            <p>{resData.para1}</p>
-            <p>{resData.para2}</p>
-
-        </div>
-    );
-}
-
-const App = () => {
-    return (
-        <>
-            <Heading />
-            <Body />
-        </>);
-}
-
-let creationRoot = ReactDOM.createRoot(document.getElementById("root"));
-
-
-creationRoot.render(<App />);
+export default Rescards;

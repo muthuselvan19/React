@@ -43,26 +43,6 @@
     margin: 12px;
 } */
 
-.searcher {
-    padding: 3px;
-    border: 1px solid grey;
-    border-radius: 5px;
-}
-
-.submitArrow {
-    padding: 2.5px;
-}
-
-.submitArrow:hover {
-    cursor: pointer;
-}
-
-.searcher:hover {
-    cursor: text;
-    border: 1px solid black;
-    background-color: transparent;
-}
-
 .item {
     padding: 20px;
     margin: 10px;
@@ -78,10 +58,19 @@
     border: 1px solid black;
 }
 
-.item > img {
+.item>img {
     width: 180px;
     height: 200px;
     border-radius: 8px;
     object-fit: cover;
     margin: 5px;
+}
+
+.filter-btn{
+    padding: 5px;
+    margin: 12px;
+}
+.btn-tag{
+    
+    text-align: center;
 }

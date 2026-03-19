@@ -1,15 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom/client"
 import Header from './components/Header'
-import ResList from "./components/Rescards";
-import Search from "./components/SearchBar"
+import ResCard from "./components/Rescards";
+
 
 const App = () => {
     return (
         <>
             <Header />
-            <Search />
-            <ResList />
+            <ResCard />
         </>);
 }
 

@@ -20,14 +20,13 @@
 
 .tagList>li {
     list-style-type: none;
-    margin: 30px;
-    padding: 10px;
+    margin-top:22px;
+    padding: 20px;
     display: inline-block;
+    font-size: 1.1em;
 }
 
-.tagList {
-    text-align: center;
-}
+
 
 
 /* body content      */
@@ -36,17 +35,27 @@
     flex-wrap: wrap;
     gap: 10px;
 }
+.search{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 10px;
+    gap: 10px;
+}
+.input-box{
+    padding: 5px;
+    width: 250px;
+}
 
-/* .searchBar {
-    all: unset;
-    display: block;
-    margin: 12px;
-} */
-
+.lanch-box{
+    cursor: pointer;
+    width: 50px;
+}
 .item {
     padding: 20px;
     margin: 10px;
     font-family: sans-serif;
+    /* border: 0.3px solid black; */
     border-radius: 5px;
     text-align: center;
     height: auto;
@@ -55,7 +64,8 @@
 }
 
 .item:hover {
-    border: 1px solid black;
+    border: 0.5px solid black;
+    background-color:#dbdbdb;
 }
 
 .item>img {
@@ -64,13 +74,25 @@
     border-radius: 8px;
     object-fit: cover;
     margin: 5px;
+    border: 0.5px solid black;
+    cursor: pointer;
 }
 
-.filter-btn{
+.filter-btn {
     padding: 5px;
     margin: 12px;
+    cursor: pointer;
 }
-.btn-tag{
-    
+
+.btn-tag {
+
     text-align: center;
+}
+
+.btn_val{
+    padding: 10 20px;
+    cursor: pointer;
+    margin-right: 5px;
+    background-color: transparent;
+    border: 1px solid black;
 }
